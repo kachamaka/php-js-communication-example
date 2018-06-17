@@ -1,0 +1,5 @@
+input{
+    display: block;
+    border: 2px solid rgba(255, 0, 0, 1.0);
+    box-sizing: border-box;
+}
