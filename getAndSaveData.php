@@ -4,7 +4,7 @@ $file = "data.json";
 $body = file_get_contents('php://input');
 $data = array();
 parse_str($body, $data);
-if(sizeof($data)>0){
+if(sizeof($data)>0 && in_array("",$data) == false){
     $json = json_encode($data, JSON_PRETTY_PRINT);
     file_put_contents($file,$json);
     $res = new Response("all good, data saved",true);
