@@ -1,5 +1,5 @@
 <?php
-
+//example class for response
 class Response{
     public $success;
     public $message;
