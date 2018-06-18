@@ -8,10 +8,8 @@ if(sizeof($data)>0 && in_array("",$data) == false){
     $json = json_encode($data, JSON_PRETTY_PRINT);
     file_put_contents($file,$json);
     $res = new Response(200,true);
-    echo json_encode($res);
-    die();
 }else{
     $res = new Response(404, false);
-    echo json_encode($res);
-    die();
 }
+echo json_encode($res);
+die();
